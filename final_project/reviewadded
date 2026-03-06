@@ -1,2 +1,2 @@
-curl -X PUT "http://localhost:5000/customer/auth/review/1?review=Great%20book" -H "Authorization: Bearer <token>"
-Review successfully posted
+curl -X PUT "http://localhost:5000/customer/auth/review/1?review=Great%20book" -H "Content-Type: application/json" --cookie "connect.sid=<session_cookie>"
+{"message":"Review successfully posted","reviews":{"testuser":"Great book"}}
