@@ -25,7 +25,7 @@ regd_users.post("/login", (req, res) => {
   }
   const token = jwt.sign({ username }, "fingerprint_customer", { expiresIn: '1h' });
   req.session.authorization = { accessToken: token, username };
-  return res.status(200).send("User successfully logged in");
+  return res.status(200).json({ message: "Login successful!" });
 });
 
 // Add a book review
@@ -37,7 +37,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
     return res.status(404).json({ message: "Book not found" });
   }
   books[isbn].reviews[username] = review;
-  return res.status(200).send("Review successfully posted");
+  return res.status(200).json({ message: "Review successfully posted", reviews: books[isbn].reviews });
 });
 
 // Delete a book review
@@ -49,7 +49,7 @@ regd_users.delete("/auth/review/:isbn", (req, res) => {
   }
   if (books[isbn].reviews[username]) {
     delete books[isbn].reviews[username];
-    return res.status(200).send("Review successfully deleted");
+    return res.status(200).json({ message: "Review successfully deleted", reviews: books[isbn].reviews });
   } else {
     return res.status(404).json({ message: "Review not found" });
   }
