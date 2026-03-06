@@ -1,8 +1,8 @@
 curl http://localhost:5000/title/Things%20Fall%20Apart
 {
-  "book": {
-    "author": "Chinua Achebe",
-    "title": "Things Fall Apart",
-    "reviews": {}
-  }
+    "1": {
+        "author": "Chinua Achebe",
+        "title": "Things Fall Apart",
+        "reviews": {}
+    }
 }
