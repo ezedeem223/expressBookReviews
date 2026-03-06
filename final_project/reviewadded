@@ -1,1 +1,2 @@
+curl -X PUT "http://localhost:5000/customer/auth/review/1?review=Great%20book" -H "Authorization: Bearer <token>"
 Review successfully posted
