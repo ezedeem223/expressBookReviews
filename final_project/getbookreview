@@ -1,4 +1,5 @@
+# Endpoint: GET /review/:isbn
 curl http://localhost:5000/review/1
 {
-  "ezedeem223": "This is a great book that explores the effects of colonialism on traditional Igbo society."
+    "ezedeem223": "This is a great book"
 }
