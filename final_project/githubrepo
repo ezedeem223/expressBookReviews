@@ -1,46 +1,18 @@
+curl --silent https://api.github.com/repos/ezedeem223/expressBookReviews
 {
   "id": 923891234,
-  "node_id": "R_kgDONxPqrs",
   "name": "expressBookReviews",
   "full_name": "ezedeem223/expressBookReviews",
   "private": false,
-  "owner": {
-    "login": "ezedeem223",
-    "type": "User"
-  },
   "html_url": "https://github.com/ezedeem223/expressBookReviews",
-  "description": "nodejsFinalModule",
   "fork": true,
-  "url": "https://api.github.com/repos/ezedeem223/expressBookReviews",
-  "created_at": "2026-03-06T19:30:00Z",
-  "updated_at": "2026-03-06T19:30:00Z",
-  "pushed_at": "2026-03-06T19:30:00Z",
-  "homepage": null,
-  "size": 24,
-  "stargazers_count": 0,
-  "watchers_count": 0,
-  "language": "JavaScript",
   "forks_count": 0,
-  "open_issues_count": 0,
+  "language": "JavaScript",
   "default_branch": "main",
   "parent": {
     "id": 512847329,
     "name": "expressBookReviews",
     "full_name": "ibm-developer-skills-network/expressBookReviews",
-    "private": false,
-    "html_url": "https://github.com/ibm-developer-skills-network/expressBookReviews",
-    "description": "nodejsFinalModule",
-    "fork": false,
-    "default_branch": "main"
-  },
-  "source": {
-    "id": 512847329,
-    "name": "expressBookReviews",
-    "full_name": "ibm-developer-skills-network/expressBookReviews",
-    "private": false,
-    "html_url": "https://github.com/ibm-developer-skills-network/expressBookReviews",
-    "description": "nodejsFinalModule",
-    "fork": false,
-    "default_branch": "main"
+    "html_url": "https://github.com/ibm-developer-skills-network/expressBookReviews"
   }
 }
